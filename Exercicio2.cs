@@ -15,7 +15,7 @@ namespace Exercicio2 {
             b = 2;
             c = 9;
 
-            resultado1 = a / b;
+            resultado1 = (double) a / b;
             resultado2 = a + c / b;
             resultado3 = a * c;
             resultado4 = c - a;
