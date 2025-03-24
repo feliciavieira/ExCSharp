@@ -1,19 +1,20 @@
-using System; 
+using System;
 using System.Globalization;
 
-class ExMedia {
+namespace Terreno
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double A, B, media;
 
-    static void Main(string[] args) { 
+            A = double.Parse(Console.ReadLine());
+            B = double.Parse(Console.ReadLine());
 
-        double A, B, media;
+            media = ((A * 3.5) + (B * 7.5)) / 11;
 
-A = double.Parse(Console.ReadLine());
-B = double.Parse(Console.ReadLine());
-
-media = ((A * 4.0) + (B * 7.0)) /11;
-
-Console.WriteLine("MEDIA = " + media.ToString("F5" , CultureInfo.InvariantCulture));
-
+            Console.WriteLine("MEDIA = " + media.ToString("F5" , CultureInfo.InvariantCulture));
+        }
     }
-
 }
